@@ -1,5 +1,6 @@
 const container = document.getElementById("container");
 const boton = document.getElementById("boton");
+const btnReload = document.getElementById("btnReload");
 
 
 for(let i = 0; i < 16 * 16; i++){ //meto el for dentro
@@ -44,6 +45,21 @@ boton.addEventListener("click", () => {
     
 })
 
+
+btnReload.addEventListener("click", () => {
+    container.innerHTML = "";
+    for(let i = 0; i < 16 * 16; i++){ //meto el for dentro
+        const div = document.createElement("div");
+        div.classList.add("cuadro");
+        container.appendChild(div);
+        
+    
+        div.addEventListener("mouseover", () => {
+            div.style.backgroundColor = "black";
+        })
+    }
+
+})
 
 
 

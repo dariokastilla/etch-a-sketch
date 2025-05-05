@@ -23,8 +23,29 @@
     text-align: center;
 }
 
+
+.caja{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/*
+//Paso a hacer una clase .caja que centre los tres elementos individualmente
+
 #caja{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
+
+#tabla{
+    display: flex;
+    justify-content: center;
+}
+
+#reload{
+    display: flex;
+    justify-content: center;
+}
+    */
